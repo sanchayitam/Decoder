@@ -1,0 +1,140 @@
+% ICC Message
+% Length  Octet           Field                 Parameter ID          
+   1      0     Priority______________________  -
+
+   1      1     Message_Length________________  -
+   1      2     Reserved                        -
+   3      3     Routing_Address_______________  -
+   1      6     Application___________________  -
+   1      7     Message_Type__________________  -
+   2      8     Message_Reference_ID__________  -
+   2      10    Customer_Number_______________  -
+   -      12    Call_ID_IE_(H.96)_____________  96      
+   -      -     Orig_DN_IE_(H.30)_____________  30
+   -      -     'Orig\Calling'_DN_Type_(H.3D)_  3D
+   -      -     Terminating_DN_IE_(H.31)______  31
+   -      -     'Ter/Called'_DN_Type_IE(H.3E)_  3E
+   -      -     Call_Type_IE_(H.32)___________  32
+   -	  -	Route_and_Member_#_IE_(H.E2)__  E2
+   -	  -	Trnf_Party_TN_IE_(H.4D)_______  4D
+   -	  -	Trnf_Party_DN_Type_IE_(H.4F)__  4F
+   -	  -	Trnf_Party_DN_IE_(H.4C)_______  4C
+   -	  -	Trnf_Party_DNIS_IE_(H.4E)_____  4E
+   -	  -	Trnf_Party_Call_ID_IE_(H.53)__  53
+   -	  -	Conf_Party_Call_ID_IE_(H.54)__  54
+   -	  -	Network_Call_ID_IE_(H.8F)_____  8F
+   -	  -	Network_Trnf_Call_ID_IE_(H.90)  90
+   -      -     Original_Dialed_DN_IE_(H.E4)__  E4
+   -      -     Other_Party_DN_Type_IE_(H.3C)_  3C
+   -      -     Enhanced_Time_Stamp_IE_(H.5F)_  5F 
+   -	  -	User_to_User_IE_(H.F9)________  F9
+   -	  -	CLID_Name_IE_(H.E8)___________  E8
+
+
+% ITR Message Type 34
+%Length Octet   Field            	        Parameter ID
+   1    0       Priority______________________  -
+   1    1       Message_Length________________  -
+   1    2       Reserved______________________	-
+   3    3       Routing_Address_______________  -
+   1    6       Application___________________	-
+   1    7       Message_Type__________________  -
+   2    8       Message_Reference_ID__________  -
+   2    10      Customer_Number_______________  -
+   -    12      CCR_Message_Subtype_IE(H.95)__ 	95
+   -    -	Array_of_Call_IDs(H.94)_______  94
+   -    -       Call_ID_IE(H.96)______________  96
+   -    -       CDN_IE_(H.4B)_________________  4B
+   -    -	Route_IE_(H.99)_______________  99
+   -    -       Treatment_IE(H.9A)____________  9A
+   -    -       Call_Type_IE(H.32)____________  32
+   -    -       Broadcast_IE(H.93)____________  93 
+   -	-	Remote_Agent_DN_IE(H.36)______ 	36
+   -    -       Terminating_DN_IE(H.31)_______  31
+   -    -       Application_Control_Bitmap_IE(H.62) 62
+   -    -       Set_Display_IE(H.5C)__________  5C
+   -    -       ACD_Position_ID_IE(H.4A)______  4A
+   -    -       ACD_(IVR_Queue)_DN(H.97)______ 	97
+   -	-	CCR_Handling_IE(H.AB)_________  AB
+   -	-	Priority_IE_(H.98)____________  98
+   -	-	Treatment_DN_IE(H.AC)_________  AC
+   -    -	Capability_Bitmap_IE(H.7A)____ 	7A
+   -    -       Conditional_IE(H.67)__________  67
+
+
+% PCI Message - Message Type 11
+% Length Octet  Field                          Parameter ID
+    1	0    	Priority______________________  -
+    1	1 	Message_Length________________  -
+    1	2 	Reserved______________________  -
+    3	3 	Routing_Address_______________  - 
+    1   6 	Application___________________  -
+    1   7 	Message_Type(H.11)____________  -
+    2	8 	Message_Reference_ID__________  -
+    2	10 	Customer_Number_______________  -
+    1	12 	Call_Type_____________________  -
+    1	13 	Device_Type___________________  -
+    1	14 	Reserved______________________  -
+    3   15      Calling_Party_TN______________  -
+    1	18 	Reserved______________________  -
+    3 	19 	Called_Party_TN_______________  -
+    1 	22 	Calling_Party_DN_Length_______  -
+    1	23 	Called_Party_DN_Length________  -
+    - 	24 	Calling_Party_DN______________  -
+    -	-	Called_Party_DN_______________  -
+    -	-       Calling_DN_Type_IE(H.3D)______  3D
+    -	-	Called_DN_Type_IE(H.3E)_______  3E
+    -	-	ACD_DN_IE(H.48)_______________  48
+    -	-	Agent_Position_ID_IE(H.4A)____  4A
+    -	-	DNIS_IE(H.41)_________________  41
+    -	-	Trnf_Party_Call_ID_IE(H.53)___  53
+    -	-	Trnf_Party_DN_IE(H.4C)________  4C
+    -	-	Trnf_Party_DN_Type_IE(H.4F)___  4F
+    -	-	Trnf_Party_TN_IE(H.4D)________  4D
+    -	-	Trnf_Party_DNIS_IE(H.4E)______  4E
+    -	-	Conf_Party_Call_ID_IE(H.54)___  54
+    -   -	Call_ID_IE(H.96)______________  96
+    -   -       Time_In_Queue_IE(H.55)________  55
+
+    -	-	Network_Call_ID_IE(H.8F)______  8F
+    -	-	Nwk_Transfer_Call_ID_IE(H.90)_  90
+    -	-	CLID_Name_IE(H.E8)____________  E8
+    -   -       ACD_Routing_IE(H.F1)__________  F1
+    -	-	Enhance_Timestamp_IE(H.5F)____  5F
+    -	-	Route_and_Member_Number_IE(H.E2) E2
+
+
+% ITS Message - Message Type 35
+% Length  Octet Field                           Parameter ID
+   1	  0     Priority______________________  - 
+   1	  1     Message_Length________________  -
+   1	  2 	Reserved______________________  -
+   3	  3     Routing_Address_______________  -
+   1	  6 	Application___________________  -
+   1	  7 	Message_Type(H.35)____________  - 
+   2	  8  	Message_Reference_ID__________  -
+   2	  10    Customer_Number_______________  -
+   - 	  12 	CCR_Message_Subtype_IE(H.95)__  95
+   -	  -	Array_of_Call_IDs(H.94)_______  94
+   -	  -	Call_ID_IE(H.96)______________  96
+   -	  -	CDN_IE(H.4B)__________________  4B
+   -	  -     Route_IE(H.99)________________  99 
+   -	  -     Treatment_IE(H.9A)____________  9A 
+   -      -     Call_Type_IE(H.32)____________  32
+   -	  -	Broadcast_IE(H.93)____________  93
+   -      -     Remote_Agent_DN_IE(H.36)______  36  
+   -      -     Terminating_DN_IE(H.31)_______  31 
+   -	  -	Application_Cntl_Bmp(H.62)____  62
+   -	  -	Set_Display_IE(H.5C)__________  5C
+   -      -     ACD_Position_ID_IE(H.4A)______  4A 
+   -      -     ACD_DN_List(H.97)_____________  97   
+   -      -     CCR_Handling(H.AB)____________  AB
+   -      -     Priority_IE(H.98)_____________  98 
+   -      -     Treatment_DN_IE(H.AC)_________  AC
+   -      -     Capabiltiy_Bitmap_IE(H.7A)____  7A
+   -	  -	Status_Information_IE(H.AA)___  AA
+   -	  -	Array_of_Status_IE_(H.5D)_____  5D
+   -	  -	Conditional_IE(H.67)__________  67
+
+
+

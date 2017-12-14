@@ -1,0 +1,5 @@
+
+
+Msg : 1 Outgoing Message Type - 'ICC'  TIME=20:20:14
+ 
+ This message is not a Meridian Mail Message Format

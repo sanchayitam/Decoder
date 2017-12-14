@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{3E883A60-F167-42AA-B53A-B051CC083903} = s 'AML Decoder'
+		'AML Decoder.EXE'
+		{
+			val AppID = s {3E883A60-F167-42AA-B53A-B051CC083903}
+		}
+	}
+}

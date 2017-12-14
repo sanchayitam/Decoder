@@ -1,0 +1,12 @@
+% ICC Message 
+% Length  Octet Field              Parameter ID          
+   1       0     Priority
+   1       1     Message Length
+   1       2     Reserved
+   3       3     Routing Address
+   1       6     Application
+   1       7     Message Type
+   2       8     Reference ID
+   2       10    Customer Number
+   -       12    Call ID IE (H.96)   96      
+   -       -     Orig DN IE (H.30)   30

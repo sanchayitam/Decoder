@@ -1,0 +1,124 @@
+
+
+Msg : 1 Outgoing Message Type - 'ICC'  TIME=20:20:14
+
+Priority                       : 03
+Message Length                 : 32
+Routing Address                : 000000
+Application                    : 1E
+Message Reference ID           : 0180
+Customer Number                : 0002
+Call ID IE (H.96)              : 0000004C
+Orig DN IE (H.30)              : 2232
+'Orig\Calling' DN Type (H.3D)  : 08
+Terminating DN IE (H.31)       : 7AA2
+'Ter/Called' DN Type IE(H.3E)  : 16
+Call Type IE (H.32)            : 03
+Original Dialed DN IE (H.E4)   : 3A2A
+Other Party DN Type IE (H.3C)  : 08
+Enhanced Time Stamp IE (H.5F)  : 1703140114140E
+
+
+Msg : 2 Incoming Message Type - 'ITR'  TIME=20:20:14
+
+Priority                       : 03
+Message Length                 : 1B
+Routing Address                : 000000
+Application                    : 1E
+Message Reference ID           : 002D
+Customer Number                : 0002
+CCR Message Subtype IE(H.95)   : 04
+Call ID IE(H.96)               : 0000004C
+CDN IE (H.4B)                  : 7AA2
+Treatment IE(H.9A)             : 02
+
+
+Msg : 3 Outgoing Message Type - 'ITS'  TIME=20:20:14
+
+Priority                       : 03
+Message Length                 : 1E
+Routing Address                : 000000
+Application                    : 1E
+Message Reference ID           : 002D
+Customer Number                : 0002
+CCR Message Subtype IE(H.95)   : 04
+Call ID IE(H.96)               : 0000004C
+CDN IE(H.4B)                   : 7AA2
+Treatment IE(H.9A)             : 02
+Status Information IE(H.AA)    : 00
+
+
+Msg : 4 Incoming Message Type - 'ITR'  TIME=20:20:14
+
+Priority                       : 03
+Message Length                 : 37
+Routing Address                : 000000
+Application                    : 1E
+Message Reference ID           : 002E
+Customer Number                : 0002
+CCR Message Subtype IE(H.95)   : 06
+Call ID IE(H.96)               : 0000004C
+CDN IE (H.4B)                  : 7AA2
+Treatment IE(H.9A)             : 00
+Call Type IE(H.32)             : 00
+Broadcast IE(H.93)             : 00
+ACD Position ID IE(H.4A)       : 7781
+ACD (IVR Queue) DN(H.97)       : 0100
+CCR Handling IE(H.AB)          : 00
+Priority IE (H.98)             : 00
+Treatment DN IE(H.AC)          : 
+Capability Bitmap IE(H.7A)     : 1FFE0000
+
+
+Msg : 5 Outgoing Message Type - 'PCI'  TIME=20:20:14
+
+Priority                       : 03
+Message Length                 : 3F
+Routing Address                : 000048
+Application                    : 16
+Message Reference ID           : 0181
+Customer Number                : 0002
+Call Type                      : 01
+Device Type                    : 02
+Calling Party TN               : 0004CC
+Called Party TN                : 000048
+Calling Party DN Length        : 02
+Called Party DN Length         : 02
+Calling Party DN               : 2322
+Called Party DN                : A2A3
+Calling DN Type IE(H.3D)       : 08
+Called DN Type IE(H.3E)        : 00
+ACD DN IE(H.48)                : 7AAA
+Agent Position ID IE(H.4A)     : 7781
+Call ID IE(H.96)               : 0000004C
+Time In Queue IE(H.55)         : 5CD4
+ACD Routing IE(H.F1)           : 04
+Enhance Timestamp IE(H.5F)     : 1703140114140E
+
+
+Msg : 6 Outgoing Message Type - 'ITS'  TIME=20:20:14
+
+Priority                       : 03
+Message Length                 : 3A
+Routing Address                : 000000
+Application                    : 1E
+Message Reference ID           : 002E
+Customer Number                : 0002
+CCR Message Subtype IE(H.95)   : 06
+Call ID IE(H.96)               : 0000004C
+CDN IE(H.4B)                   : 7AA2
+Treatment IE(H.9A)             : 00
+Call Type IE(H.32)             : 00
+Broadcast IE(H.93)             : 00
+ACD Position ID IE(H.4A)       : 7781
+ACD DN List(H.97)              : 0100
+CCR Handling(H.AB)             : 00
+Priority IE(H.98)              : 00
+Treatment DN IE(H.AC)          : 
+Capabiltiy Bitmap IE(H.7A)     : 1FFE0000
+Status Information IE(H.AA)    : 00
+
+
+Msg : 7 Incoming Message Type - 'CALLANS'  TIME=20:20:16
+
+'CALLANS' Message not recognised 

@@ -1,0 +1,27 @@
+#include <string.h>
+
+int main () {
+
+ char str[100];
+
+   char * tmp, *last;
+
+ strcpy(str, "This is a sample string,just testing.");
+
+ printf ("Splitting \"%s\" into tokens:\n",str);
+
+ tmp = strtok_r (str," ,. " , &last);
+
+ while (tmp != NULL) {
+
+  printf ("%s\n",tmp);
+
+      tmp = strtok_r (NULL, " ,. " , &last);
+
+   }
+
+   return 0;
+
+} 
+
+

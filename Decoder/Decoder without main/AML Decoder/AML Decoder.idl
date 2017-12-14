@@ -1,0 +1,41 @@
+
+	// AML Decoder.idl : IDL source for AML Decoder.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (AML Decoder.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(8917F1DD-65A8-4726-AF58-F491C281365A),
+		dual,
+		helpstring("Itool Interface"),
+		pointer_default(unique)
+	]
+	interface Itool : IDispatch
+	{
+	};
+[
+	uuid(96E916C2-A1EB-4811-B49B-920B28D8E8A3),
+	version(1.0),
+	helpstring("AML Decoder 1.0 Type Library")
+]
+library AMLDecoderLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	importlib("devshl.dll");
+	importlib("ide\devdbg.pkg");
+	
+
+	[
+		uuid(692189AA-5B49-45D4-9AC9-1CC704B4131E),
+		helpstring("tool Class")
+	]
+	coclass tool
+	{
+		[default] interface Itool;
+	};
+};
+
+	
